@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<v-app>
+		<v-app-bar app color="primary" dark>
+			<div class="d-flex align-center">
+				<v-avatar class="mr-1" size="50">
+					<v-icon size="50">mdi-safe</v-icon>
+				</v-avatar>
+				<h2>JS-Crack</h2>
+			</div>
+		</v-app-bar>
+
+		<v-main>
+			<HelloWorld />
+		</v-main>
+	</v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+	name: "App",
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+	components: {
+		HelloWorld,
+	},
+
+	data: () => ({
+		//
+	}),
+};
+</script>
